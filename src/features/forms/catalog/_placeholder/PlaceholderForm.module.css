@@ -1,0 +1,14 @@
+.wrapper {
+  padding: var(--space-7) 0;
+  text-align: center;
+}
+
+.title {
+  font-size: var(--text-xl);
+  font-weight: 600;
+  margin-bottom: var(--space-3);
+}
+
+.body {
+  color: var(--color-grey-600);
+}

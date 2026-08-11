@@ -1,0 +1,30 @@
+/*
+  Helios Antique is the ONLY typeface used in this project.
+  Do not add other font-family declarations anywhere else in the app —
+  every component should reference the tokens in tokens.css instead of
+  naming a font directly.
+*/
+
+@font-face {
+  font-family: 'Helios Antique';
+  src: url('/fonts/HeliosAntique-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helios Antique';
+  src: url('/fonts/HeliosAntique-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helios Antique';
+  src: url('/fonts/HeliosAntique-LightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}

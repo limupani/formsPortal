@@ -1,0 +1,66 @@
+/*
+  Design tokens — single source of truth for the visual language.
+  Change a value here to re-theme the whole app. Components should
+  always consume var(--token), never hard-code a color/size.
+*/
+
+:root {
+  /* Font */
+  --font-body: 'Helios Antique', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Core palette — UI is black/white/grey, matching the approved wireframes */
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-grey-50: #fafafa;
+  --color-grey-100: #f4f4f4;
+  --color-grey-200: #e5e5e5;
+  --color-grey-400: #b3b3b3;
+  --color-grey-600: #7a7a7a;
+  --color-grey-800: #333333;
+
+  /* Brand accent — pulled from the Engro leaf mark, used sparingly (logo only) */
+  --color-brand-green-light: #a9d18e;
+  --color-brand-green-mid: #4caf50;
+  --color-brand-green-dark: #0f7a3d;
+
+  /* Semantic status colors (dashboard pills) */
+  --color-status-approved: #0f7a3d;
+  --color-status-rejected: #b3261e;
+  --color-status-pending: #7a7a7a;
+  --color-status-draft: #333333;
+
+  /* Surfaces */
+  --surface-page: var(--color-white);
+  --surface-hover-fill: var(--color-black);
+  --surface-hover-text: var(--color-white);
+
+  /* Borders */
+  --border-default: 1px solid var(--color-black);
+  --border-subtle: 1px solid var(--color-grey-200);
+  --radius-pill: 999px;
+  --radius-md: 8px;
+  --radius-sm: 4px;
+
+  /* Spacing scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  /* Layout */
+  --content-max-width: 1200px;
+  --header-height: 72px;
+
+  /* Type scale */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+  --text-3xl: 3.25rem;
+}

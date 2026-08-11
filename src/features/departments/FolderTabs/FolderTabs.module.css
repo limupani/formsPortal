@@ -1,0 +1,38 @@
+.svg {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+  display: block;
+}
+
+.folderBody {
+  fill: var(--color-white);
+  stroke: var(--color-black);
+}
+
+.tabHit {
+  cursor: pointer;
+}
+
+.tabHitArea {
+  fill: transparent;
+}
+
+.tabLabel {
+  fill: var(--color-black);
+  font-family: var(--font-body);
+  font-size: 20px;
+  letter-spacing: -0.01em;
+}
+
+.tabActive {
+  fill: var(--color-black);
+  stroke: var(--color-black);
+}
+
+.tabActiveLabel {
+  fill: var(--color-white);
+  font-family: var(--font-body);
+  font-size: 20px;
+  letter-spacing: -0.01em;
+}

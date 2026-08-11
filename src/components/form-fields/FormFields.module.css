@@ -1,0 +1,100 @@
+.row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-5);
+}
+
+.label {
+  min-width: 190px;
+  font-size: var(--text-base);
+  color: var(--color-black);
+  flex-shrink: 0;
+}
+
+.rowStacked {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-2);
+}
+
+.rowStacked .label {
+  min-width: 0;
+}
+
+.input {
+  flex: 1;
+  padding: var(--space-2) var(--space-3);
+  border: var(--border-default);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-base);
+  background: var(--color-white);
+}
+
+.input:focus {
+  outline: none;
+  border-width: 1.5px;
+}
+
+.segmentedGroup {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.segmentedBox {
+  width: 28px;
+  height: 34px;
+  text-align: center;
+  border: var(--border-default);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-base);
+}
+
+.segmentedBox:focus {
+  outline: none;
+  border-width: 1.5px;
+}
+
+.segmentedDash {
+  color: var(--color-grey-600);
+  padding: 0 2px;
+}
+
+.checkbox {
+  width: 18px;
+  height: 18px;
+  border: var(--border-default);
+  accent-color: var(--color-black);
+}
+
+.uploadBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  border: var(--border-default);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  color: var(--color-grey-600);
+  font-size: var(--text-sm);
+}
+
+.uploadBtn:hover {
+  background: var(--color-grey-100);
+}
+
+.uploadInput {
+  display: none;
+}
+
+.section {
+  margin-bottom: var(--space-7);
+}
+
+.sectionTitle {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: var(--space-5);
+}

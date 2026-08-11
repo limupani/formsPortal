@@ -1,0 +1,44 @@
+.row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  width: 100%;
+  padding: var(--space-4) var(--space-6);
+  background: var(--color-white);
+  border: none;
+  border-bottom: var(--border-subtle);
+  text-align: left;
+  font-size: var(--text-base);
+  transition: background-color 120ms ease, color 120ms ease;
+}
+
+.row:hover {
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+.rowExpired {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  width: 100%;
+  padding: var(--space-4) var(--space-6);
+  background: var(--color-grey-100);
+  border-bottom: var(--border-subtle);
+  color: var(--color-grey-600);
+  font-size: var(--text-base);
+}
+
+.index {
+  min-width: 28px;
+  font-weight: 600;
+}
+
+.title {
+  flex: 1;
+}
+
+.expiredOn {
+  font-size: var(--text-sm);
+  color: var(--color-grey-600);
+}

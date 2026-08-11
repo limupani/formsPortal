@@ -1,0 +1,20 @@
+.heading {
+  margin: var(--space-8) 0 var(--space-5);
+  text-align: center;
+  font-size: clamp(3rem, 8.6vw, 7.5rem);
+  font-weight: 600;
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+}
+
+.tabsWrapper {
+  margin-top: calc(var(--space-4) * -1);
+}
+
+.shortcuts {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-7);
+  margin-top: var(--space-6);
+  padding-right: var(--space-4);
+}

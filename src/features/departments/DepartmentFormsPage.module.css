@@ -1,0 +1,27 @@
+.tabRow {
+  display: flex;
+  padding-left: var(--space-6);
+}
+
+.panel {
+  border: var(--border-default);
+  border-radius: 0 var(--radius-md) var(--radius-md) var(--radius-md);
+  margin-top: -1px;
+  overflow: hidden;
+}
+
+.panelHeading {
+  font-size: var(--text-base);
+  font-weight: 600;
+  padding: var(--space-4) var(--space-6) var(--space-3);
+}
+
+.expiredHeading {
+  border-top: var(--border-subtle);
+  color: var(--color-grey-600);
+}
+
+.empty {
+  padding: 0 var(--space-6) var(--space-5);
+  color: var(--color-grey-600);
+}

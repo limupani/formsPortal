@@ -1,0 +1,32 @@
+.primary,
+.secondary {
+  font-size: var(--text-base);
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius-md);
+  border: var(--border-default);
+  transition: background-color 120ms ease, color 120ms ease;
+}
+
+.primary {
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+.primary:hover {
+  background: var(--color-grey-800);
+}
+
+.primary:disabled {
+  background: var(--color-grey-400);
+  border-color: var(--color-grey-400);
+  cursor: not-allowed;
+}
+
+.secondary {
+  background: var(--color-white);
+  color: var(--color-black);
+}
+
+.secondary:hover {
+  background: var(--color-grey-100);
+}

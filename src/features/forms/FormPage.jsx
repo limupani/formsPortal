@@ -53,6 +53,7 @@ export default function FormPage() {
         <FormComponent
           formId={formId}
           title={entry.title}
+          departmentName={department.name}
           initialData={existingRecord?.data ?? null}
           onSave={handleSave}
           onSubmit={handleSubmit}

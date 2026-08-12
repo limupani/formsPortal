@@ -1,4 +1,5 @@
 import InternetUserRequestForm from './catalog/internetUserRequest/InternetUserRequestForm'
+import HistorianA1pexAccessForm from './catalog/historianA1pexAccess/HistorianA1pexAccessForm'
 import PlaceholderForm from './catalog/_placeholder/PlaceholderForm'
 
 /**
@@ -51,6 +52,12 @@ export const formsRegistry = {
         title: 'Cafeteria Hygiene Form',
         description: 'Report or review cafeteria hygiene standards.',
         component: PlaceholderForm,
+      },
+      {
+        id: 'historian-a1pex-access',
+        title: 'IP21 Historian Access Form',
+        description: 'Request new or renewed A1PEX Historian access.',
+        component: HistorianA1pexAccessForm,
       },
     ],
     expired: [

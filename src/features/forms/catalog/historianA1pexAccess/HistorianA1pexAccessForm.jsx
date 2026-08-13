@@ -123,9 +123,9 @@ export default function HistorianA1pexAccessForm({ departmentName, title, initia
 
       <h1 className={styles.h1}>IP21 Historian Access Form</h1>
       <p className={styles.role}>
-        {page === 1 && 'Applicant'}
-        {page === 2 && 'A1PEX System Coordinator'}
-        {page === 3 && 'Information System — DHK'}
+        {page === 1 && 'APPLICANT'}
+        {page === 2 && 'A1PEX SYSTEM COORDINATOR'}
+        {page === 3 && 'INFORMATION SYSTEM — DHK'}
       </p>
       <div className={styles.subtitle}>
         Engro Corporation Limited

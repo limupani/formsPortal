@@ -1,32 +1,32 @@
 .primary,
 .secondary {
-  font-size: var(--text-base);
-  padding: var(--space-3) var(--space-6);
-  border-radius: var(--radius-md);
-  border: var(--border-default);
+  font-size: 1rem;
+  padding: 12px 32px;
+  border-radius: 8px;
+  border: 1px solid #000000;
   transition: background-color 120ms ease, color 120ms ease;
 }
 
 .primary {
-  background: var(--color-black);
-  color: var(--color-white);
+  background: #000000;
+  color: #ffffff;
 }
 
 .primary:hover {
-  background: var(--color-grey-800);
+  background: #333333;
 }
 
 .primary:disabled {
-  background: var(--color-grey-400);
-  border-color: var(--color-grey-400);
+  background: #b3b3b3;
+  border-color: #b3b3b3;
   cursor: not-allowed;
 }
 
 .secondary {
-  background: var(--color-white);
-  color: var(--color-black);
+  background: #ffffff;
+  color: #000000;
 }
 
 .secondary:hover {
-  background: var(--color-grey-100);
+  background: #f4f4f4;
 }

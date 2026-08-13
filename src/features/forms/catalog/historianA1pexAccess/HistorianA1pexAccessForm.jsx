@@ -22,6 +22,15 @@ const EMPTY_DATA = {
   excelAddInIsSection: '', // 'not-available' | 'no' | 'yes'
 }
 
+const REQUEST_TYPE_LABEL = {
+  new: 'New Access',
+  renew: 'Access Renew',
+}
+
+function display(value) {
+  return value && value.length > 0 ? value : '—'
+}
+
 function RadioGroup({ name, value, onChange, options }) {
   return (
     <span className={styles.opts}>
@@ -37,6 +46,56 @@ function RadioGroup({ name, value, onChange, options }) {
         </label>
       ))}
     </span>
+  )
+}
+
+/** Read-only recap of what the applicant entered on step 1, carried forward into steps 2 and 3. */
+function RequestSummaryCard({ data }) {
+  const requestTypeLabel = REQUEST_TYPE_LABEL[data.requestType] ?? 'Request'
+
+  return (
+    <>
+      <div className={styles.sectionTitle}>Applicant's Request — {requestTypeLabel}</div>
+      <div className={styles.card}>
+        <div className={styles.summaryGrid}>
+          <div>
+            <p>
+              <b>Name:</b> {display(data.fullName)}
+            </p>
+            <p>
+              <b>Department:</b> {display(data.department)}
+            </p>
+          </div>
+          <div>
+            <p>
+              <b>Computer Name:</b> {display(data.computerName)}
+            </p>
+            <p>
+              <b>IP Address:</b> {display(data.pcIpAddress)}
+            </p>
+            <p>
+              <b>MAC Address:</b> {display(data.macAddress)}
+            </p>
+          </div>
+        </div>
+        <div className={styles.summaryRequests}>
+          <p>
+            <b>Requests</b>
+          </p>
+          <div className={styles.summaryRequestsRow}>
+            <p>
+              <b>Connectivity:</b> {display(data.wifiLanConnectivity)}
+            </p>
+            <p>
+              <b>Access Type:</b> {display(data.accessType)}
+            </p>
+            <p>
+              <b>Authorization Type:</b> {display(data.authorizationType)}
+            </p>
+          </div>
+        </div>
+      </div>
+    </>
   )
 }
 
@@ -63,6 +122,11 @@ export default function HistorianA1pexAccessForm({ departmentName, title, initia
       </div>
 
       <h1 className={styles.h1}>IP21 Historian Access Form</h1>
+      <p className={styles.role}>
+        {page === 1 && 'Applicant'}
+        {page === 2 && 'A1PEX System Coordinator'}
+        {page === 3 && 'Information System — DHK'}
+      </p>
       <div className={styles.subtitle}>
         Engro Corporation Limited
         <br />
@@ -72,8 +136,6 @@ export default function HistorianA1pexAccessForm({ departmentName, title, initia
       {/* PAGE 1 — Applicant */}
       {page === 1 && (
         <section className={styles.page}>
-          <div className={styles.sectionTitle}>Applicant</div>
-
           <div className={styles.row}>
             <div className={styles.field}>
               <label>Name</label>
@@ -223,8 +285,9 @@ export default function HistorianA1pexAccessForm({ departmentName, title, initia
       {/* PAGE 2 — A1PEX System Coordinator */}
       {page === 2 && (
         <section className={styles.page}>
-          <div className={styles.sectionTitle}>A1PEX System Coordinator</div>
+          <RequestSummaryCard data={data} />
 
+          <div className={styles.sectionTitle}>A1PEX System Coordinator</div>
           <div className={styles.qtable}>
             <div className={styles.qrow}>
               <span className={styles.q}>Client access provided</span>
@@ -284,8 +347,25 @@ export default function HistorianA1pexAccessForm({ departmentName, title, initia
       {/* PAGE 3 — IS Section DHK */}
       {page === 3 && (
         <section className={styles.page}>
-          <div className={styles.sectionTitle}>To be filled by IS Section DHK</div>
+          <RequestSummaryCard data={data} />
 
+          <div className={styles.sectionTitle}>A1PEX System Coordinator Response</div>
+          <div className={styles.qtable}>
+            <div className={styles.qrow}>
+              <span className={styles.q}>Client access provided:</span>
+              <span className={styles.answer}>{display(data.clientAccessProvided)}</span>
+            </div>
+            <div className={styles.qrow}>
+              <span className={styles.q}>Login credentials shared with applicant?</span>
+              <span className={styles.answer}>{display(data.credentialsShared)}</span>
+            </div>
+            <div className={styles.qrow}>
+              <span className={styles.q}>Has Excel Add-in been installed on PC for thick clients?</span>
+              <span className={styles.answer}>{display(data.excelAddInCoordinator)}</span>
+            </div>
+          </div>
+
+          <div className={styles.sectionTitle}>To be filled by IS Section DHK</div>
           <div className={styles.qtable}>
             <div className={styles.qrow}>
               <span className={styles.q}>Access provided to thin client?</span>

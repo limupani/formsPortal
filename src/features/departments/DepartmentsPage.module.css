@@ -1,5 +1,15 @@
+.stickyHeading {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  padding: 64px 0 24px;
+  background: #ffffff;
+}
+
 .heading {
-  margin: var(--space-8) 0 var(--space-5);
+  margin: 0;
   text-align: center;
   font-size: clamp(3rem, 8.6vw, 7.5rem);
   font-weight: 600;
@@ -7,14 +17,20 @@
   letter-spacing: -0.03em;
 }
 
-.tabsWrapper {
-  margin-top: calc(var(--space-4) * -1);
+/* Sits above the sticky heading (higher z-index) with an opaque background, so as the
+   page scrolls this panel slides up and visibly covers "Welcome to Portal" underneath it. */
+.overlapPanel {
+  position: relative;
+  z-index: 2;
+  background: #ffffff;
+  min-height: 75vh;
+  padding-top: 8px;
 }
 
 .shortcuts {
   display: flex;
   justify-content: flex-end;
-  gap: var(--space-7);
-  margin-top: var(--space-6);
-  padding-right: var(--space-4);
+  gap: 48px;
+  margin-top: 32px;
+  padding: 0 32px;
 }

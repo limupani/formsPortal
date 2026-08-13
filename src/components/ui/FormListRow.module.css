@@ -1,32 +1,32 @@
 .row {
   display: flex;
   align-items: center;
-  gap: var(--space-4);
+  gap: 16px;
   width: 100%;
-  padding: var(--space-4) var(--space-6);
-  background: var(--color-white);
+  padding: 16px 32px;
+  background: #ffffff;
   border: none;
-  border-bottom: var(--border-subtle);
+  border-bottom: 1px solid #e5e5e5;
   text-align: left;
-  font-size: var(--text-base);
+  font-size: 1rem;
   transition: background-color 120ms ease, color 120ms ease;
 }
 
 .row:hover {
-  background: var(--color-black);
-  color: var(--color-white);
+  background: #000000;
+  color: #ffffff;
 }
 
 .rowExpired {
   display: flex;
   align-items: center;
-  gap: var(--space-4);
+  gap: 16px;
   width: 100%;
-  padding: var(--space-4) var(--space-6);
-  background: var(--color-grey-100);
-  border-bottom: var(--border-subtle);
-  color: var(--color-grey-600);
-  font-size: var(--text-base);
+  padding: 16px 32px;
+  background: #f4f4f4;
+  border-bottom: 1px solid #e5e5e5;
+  color: #7a7a7a;
+  font-size: 1rem;
 }
 
 .index {
@@ -39,6 +39,6 @@
 }
 
 .expiredOn {
-  font-size: var(--text-sm);
-  color: var(--color-grey-600);
+  font-size: 0.875rem;
+  color: #7a7a7a;
 }

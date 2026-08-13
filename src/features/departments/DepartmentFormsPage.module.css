@@ -1,27 +1,27 @@
 .tabRow {
   display: flex;
-  padding-left: var(--space-6);
+  padding-left: 32px;
 }
 
 .panel {
-  border: var(--border-default);
-  border-radius: 0 var(--radius-md) var(--radius-md) var(--radius-md);
+  border: 1px solid #000000;
+  border-radius: 0 8px 8px 8px;
   margin-top: -1px;
   overflow: hidden;
 }
 
 .panelHeading {
-  font-size: var(--text-base);
+  font-size: 1rem;
   font-weight: 600;
-  padding: var(--space-4) var(--space-6) var(--space-3);
+  padding: 16px 32px 12px;
 }
 
 .expiredHeading {
-  border-top: var(--border-subtle);
-  color: var(--color-grey-600);
+  border-top: 1px solid #e5e5e5;
+  color: #7a7a7a;
 }
 
 .empty {
-  padding: 0 var(--space-6) var(--space-5);
-  color: var(--color-grey-600);
+  padding: 0 32px 24px;
+  color: #7a7a7a;
 }

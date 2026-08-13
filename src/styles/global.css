@@ -1,5 +1,7 @@
 @import './fonts.css';
-@import './tokens.css';
+/* Design tokens (src/styles/tokens.css) are parked for now — every component
+   below uses plain literal values instead. Re-import tokens.css and swap
+   values back to var(--token) later once the design settles. */
 
 *,
 *::before,
@@ -14,10 +16,10 @@ body {
 }
 
 body {
-  font-family: var(--font-body);
+  font-family: 'Helios Antique', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-weight: 400;
-  color: var(--color-black);
-  background: var(--surface-page);
+  color: #000000;
+  background: #ffffff;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -51,7 +53,7 @@ ul {
 
 /* Visible keyboard focus everywhere */
 :focus-visible {
-  outline: 2px solid var(--color-black);
+  outline: 2px solid #000000;
   outline-offset: 2px;
 }
 

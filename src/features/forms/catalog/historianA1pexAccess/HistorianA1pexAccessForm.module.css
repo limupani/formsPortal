@@ -5,12 +5,12 @@
 
 .breadcrumb {
   display: inline-block;
-  border: 1px solid var(--color-grey-200);
-  border-radius: var(--radius-pill);
+  border: 1px solid #e5e5e5;
+  border-radius: 999px;
   padding: 11px 22px;
   font-size: 0.8125rem;
-  color: var(--color-grey-600);
-  margin-bottom: var(--space-7);
+  color: #7a7a7a;
+  margin-bottom: 48px;
 }
 
 .h1 {
@@ -18,15 +18,21 @@
   font-weight: 700;
   letter-spacing: 0.2px;
   text-transform: uppercase;
-  margin: 0 0 var(--space-2);
+  margin: 0 0 8px;
 }
 
 .subtitle {
   font-style: italic;
   font-size: 0.84375rem;
   line-height: 1.35;
-  color: var(--color-black);
-  margin-bottom: var(--space-6);
+  color: #000000;
+  margin-bottom: 32px;
+}
+
+.role {
+  font-size: 1.03125rem;
+  font-weight: 400;
+  margin: 8px 0 0;
 }
 
 .sectionTitle {
@@ -34,55 +40,55 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.3px;
-  margin: var(--space-8) 0 var(--space-4);
+  margin: 64px 0 16px;
 }
 
 .row {
   display: flex;
-  gap: var(--space-4);
-  margin-bottom: var(--space-1);
+  gap: 16px;
+  margin-bottom: 4px;
   flex-wrap: wrap;
 }
 
 .field {
   flex: 1;
   min-width: 180px;
-  margin-bottom: var(--space-4);
+  margin-bottom: 16px;
 }
 
 .field label {
   display: block;
   font-size: 0.84375rem;
   font-weight: 600;
-  margin-bottom: var(--space-2);
+  margin-bottom: 8px;
 }
 
 .field input[type='text'],
 .field input[type='date'] {
   width: 100%;
-  border: 1px solid var(--color-grey-400);
-  border-radius: var(--radius-pill);
+  border: 1px solid #b3b3b3;
+  border-radius: 999px;
   padding: 10px 13px;
   font-family: inherit;
   font-size: 0.84375rem;
-  color: var(--color-black);
+  color: #000000;
   outline: none;
-  background: var(--color-white);
+  background: #ffffff;
 }
 
 .field input::placeholder {
-  color: var(--color-grey-400);
+  color: #b3b3b3;
 }
 
 .field input:focus {
-  border-color: var(--color-black);
+  border-color: #000000;
 }
 
 .radios {
   display: flex;
-  gap: var(--space-6);
+  gap: 32px;
   align-items: center;
-  padding-top: var(--space-1);
+  padding-top: 4px;
 }
 
 .radios label {
@@ -91,36 +97,36 @@
   margin: 0;
   display: flex;
   align-items: center;
-  gap: var(--space-2);
+  gap: 8px;
 }
 
 .radios input[type='radio'] {
-  accent-color: var(--color-grey-600);
+  accent-color: #7a7a7a;
   width: 13px;
   height: 13px;
 }
 
 .note {
   font-size: 0.65625rem;
-  color: var(--color-grey-600);
+  color: #7a7a7a;
   line-height: 1.35;
-  margin-top: var(--space-2);
+  margin-top: 8px;
 }
 
 .qtable {
-  border: 1px solid var(--color-grey-200);
-  border-radius: 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 999px;
   overflow: hidden;
-  margin-top: var(--space-1);
+  margin-top: 4px;
 }
 
 .qrow {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--space-5);
+  gap: 24px;
   padding: 11px 15px;
-  border-bottom: 1px solid var(--color-grey-200);
+  border-bottom: 1px solid #e5e5e5;
   flex-wrap: wrap;
 }
 
@@ -135,7 +141,7 @@
 
 .opts {
   display: flex;
-  gap: var(--space-5);
+  gap: 24px;
 }
 
 .opts label {
@@ -144,26 +150,85 @@
   margin: 0;
   display: flex;
   align-items: center;
-  gap: var(--space-2);
+  gap: 8px;
   white-space: nowrap;
 }
 
 .opts input[type='radio'] {
-  accent-color: var(--color-grey-600);
+  accent-color: #7a7a7a;
   width: 13px;
   height: 13px;
 }
 
+.answer {
+  font-size: 0.84375rem;
+  color: #333333;
+}
+
+.card {
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.summaryGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 24px;
+}
+
+.summaryGrid p {
+  margin: 0 0 8px;
+  font-size: 0.84375rem;
+  color: #333333;
+}
+
+.summaryGrid b {
+  color: #000000;
+  font-weight: 600;
+}
+
+.summaryRequests {
+  margin-top: 24px;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 16px;
+}
+
+.summaryRequests p {
+  margin: 0 0 8px;
+  font-size: 0.84375rem;
+  color: #333333;
+}
+
+.summaryRequests b {
+  color: #000000;
+  font-weight: 600;
+}
+
+.summaryRequestsRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px 24px;
+  margin-top: 4px;
+}
+
+@media (max-width: 640px) {
+  .summaryGrid,
+  .summaryRequestsRow {
+    grid-template-columns: 1fr;
+  }
+}
+
 .actions {
-  margin-top: var(--space-8);
+  margin-top: 64px;
   text-align: center;
 }
 
 .secondaryRow {
   display: flex;
   justify-content: center;
-  gap: var(--space-4);
-  margin-top: var(--space-4);
+  gap: 16px;
+  margin-top: 16px;
 }
 
 @media (max-width: 640px) {

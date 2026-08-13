@@ -1,14 +1,14 @@
 .tab {
   position: relative;
   appearance: none;
-  background: var(--color-white);
-  border: var(--border-default);
+  background: #ffffff;
+  border: 1px solid #000000;
   border-bottom: none;
   clip-path: polygon(6% 0%, 94% 0%, 100% 100%, 0% 100%);
-  padding: var(--space-3) var(--space-6) var(--space-4);
+  padding: 12px 32px 16px;
   margin-right: -18px;
-  font-size: var(--text-base);
-  color: var(--color-black);
+  font-size: 1rem;
+  color: #000000;
   white-space: nowrap;
   transition: background-color 120ms ease, color 120ms ease;
 }
@@ -19,6 +19,6 @@
 
 .tab:hover,
 .tabActive {
-  background: var(--color-black);
-  color: var(--color-white);
+  background: #000000;
+  color: #ffffff;
 }

@@ -1,0 +1,63 @@
+/* Breaks out of the page's centered max-width container to span the full viewport,
+   matching the mockup's edge-to-edge department panel. */
+.fullBleed {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  width: 100vw;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background: #ffffff;
+}
+
+.row {
+  cursor: pointer;
+  border-bottom: 1px solid #e5e5e5;
+  transition: background-color 120ms ease, color 120ms ease;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.row:hover,
+.row:focus-visible {
+  background: #000000;
+  color: #ffffff;
+}
+
+.rowInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 32px;
+  min-height: 111px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name {
+  font-size: 1.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+}
+
+.tagline {
+  margin-top: 8px;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 640px) {
+  .name {
+    font-size: 1.25rem;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+
+  .rowInner {
+    min-height: 88px;
+  }
+}

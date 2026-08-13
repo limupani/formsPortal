@@ -16,7 +16,7 @@ export default function DepartmentsPage() {
     <PageShell>
       {/* Sticky: stays pinned as the page scrolls, so the panel below can scroll up and overlap it */}
       <div className={styles.stickyHeading}>
-        <h1 className={styles.heading}>Welcome to Portal</h1>
+        <h1 className={styles.heading}>DEPARTMENTS</h1>
       </div>
 
       {/* Higher stacking + opaque background so it visibly covers the heading while scrolling past it */}

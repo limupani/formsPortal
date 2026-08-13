@@ -10,11 +10,11 @@
  * automatically. No other file needs to change.
  */
 export const departments = [
-  { id: 'dept-one', name: 'Department One', tagline: 'IT and Systems' },
-  { id: 'dept-two', name: 'Department Two', tagline: 'Design and Marketing' },
-  { id: 'dept-three', name: 'Department Three', tagline: 'Mechanics' },
-  { id: 'dept-four', name: 'Department Four', tagline: 'HR and Administration' },
-  { id: 'dept-five', name: 'Department Five', tagline: 'HR and Administration' },
+  { id: 'dept-one', name: 'IT and Systems', tagline: 'IT and Systems' },
+  { id: 'dept-two', name: 'Design and Marketing', tagline: 'Design and Marketing' },
+  { id: 'dept-three', name: 'Mechanics', tagline: 'Mechanics' },
+  { id: 'dept-four', name: 'HR and Administration', tagline: 'HR and Administration' },
+  { id: 'dept-five', name: 'HR and Administration', tagline: 'HR and Administration' },
 ]
 
 export function getDepartmentById(id) {

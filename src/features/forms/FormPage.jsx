@@ -16,7 +16,7 @@ export default function FormPage() {
 
   if (!department || !entry) {
     return (
-      <PageShell>
+      <PageShell showSearch={false}>
         <p>That form couldn't be found.</p>
       </PageShell>
     )
@@ -48,7 +48,7 @@ export default function FormPage() {
   }
 
   return (
-    <PageShell>
+    <PageShell showSearch={false}>
       <div className={styles.wrapper}>
         <FormComponent
           formId={formId}

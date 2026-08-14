@@ -14,10 +14,15 @@
  */
 export const departments = [
   { id: 'dept-one', name: 'IT and Systems' },
-  { id: 'dept-two', name: 'Design and Marketing' },
-  { id: 'dept-three', name: 'Mechanics' },
-  { id: 'dept-four', name: 'HR and Administration' },
-  { id: 'dept-five', name: 'HR and Administration' },
+  { id: 'dept-two', name: 'Administration' },
+  { id: 'dept-three', name: 'Maintenance' },
+  { id: 'dept-four', name: 'Marketing' },
+  { id: 'dept-five', name: 'Medical' },
+  { id: 'dept-six', name: 'EPQL Colony' },
+  { id: 'dept-seven', name: 'Mechanical Engineering' },
+  { id: 'dept-eight', name: 'Process Engineering' },
+  { id: 'dept-nine', name: 'Produciton' },
+  { id: 'dept-ten', name: 'Others' },
 ]
 
 export function getDepartmentById(id) {

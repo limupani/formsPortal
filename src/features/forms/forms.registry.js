@@ -1,4 +1,3 @@
-import InternetUserRequestForm from './catalog/internetUserRequest/InternetUserRequestForm'
 import HistorianA1pexAccessForm from './catalog/historianA1pexAccess/HistorianA1pexAccessForm'
 import PlaceholderForm from './catalog/_placeholder/PlaceholderForm'
 
@@ -21,14 +20,8 @@ import PlaceholderForm from './catalog/_placeholder/PlaceholderForm'
  * since expired forms can't be opened).
  */
 export const formsRegistry = {
-  'dept-two': {
+  'dept-one': {
     available: [
-      {
-        id: 'internet-user-request',
-        title: 'Internet User Request Form',
-        description: 'Request or update residential internet service.',
-        component: InternetUserRequestForm,
-      },
       {
         id: 'historian-a1pex-access',
         title: 'IP21 Historian Access Form',
@@ -42,10 +35,15 @@ export const formsRegistry = {
     ],
   },
 
-  'dept-one': { available: [], expired: [] },
+  'dept-two': { available: [], expired: [] },
   'dept-three': { available: [], expired: [] },
   'dept-four': { available: [], expired: [] },
   'dept-five': { available: [], expired: [] },
+  'dept-six': { available: [], expired: [] },
+  'dept-seven': { available: [], expired: [] },
+  'dept-eight': { available: [], expired: [] },
+  'dept-nine': { available: [], expired: [] },
+  'dept-ten': { available: [], expired: [] },
 }
 
 export function getFormsForDepartment(departmentId) {

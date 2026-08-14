@@ -30,30 +30,6 @@ export const formsRegistry = {
         component: InternetUserRequestForm,
       },
       {
-        id: 'user-request-form',
-        title: 'User Request Form',
-        description: 'General IT user account request.',
-        component: PlaceholderForm,
-      },
-      {
-        id: 'internet-form',
-        title: 'Internet Form',
-        description: 'Office internet connectivity request.',
-        component: PlaceholderForm,
-      },
-      {
-        id: 'vending-machine-request',
-        title: 'Vending Machine Request Form',
-        description: 'Request vending machine installation or service.',
-        component: PlaceholderForm,
-      },
-      {
-        id: 'cafeteria-hygiene',
-        title: 'Cafeteria Hygiene Form',
-        description: 'Report or review cafeteria hygiene standards.',
-        component: PlaceholderForm,
-      },
-      {
         id: 'historian-a1pex-access',
         title: 'IP21 Historian Access Form',
         description: 'Request new or renewed A1PEX Historian access.',

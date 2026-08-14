@@ -1,4 +1,3 @@
-import { useNavigate } from 'react-router-dom'
 import PageShell from '../../components/layout/PageShell'
 import DepartmentList from './DepartmentList/DepartmentList'
 import { departments } from './departments.config'
@@ -6,12 +5,6 @@ import { getFormsForDepartment } from '../forms/forms.registry'
 import styles from './DepartmentsPage.module.css'
 
 export default function DepartmentsPage() {
-  const navigate = useNavigate()
-
-  function handleSelect(id) {
-    navigate(id === 'all-forms' ? '/portal/all' : `/portal/${id}`)
-  }
-
   // Live count, not stored data — always matches whatever's actually in forms.registry.js.
   const departmentsWithFormCounts = departments.map((dept) => {
     const count = getFormsForDepartment(dept.id).available.length
@@ -27,8 +20,7 @@ export default function DepartmentsPage() {
 
       {/* Higher stacking + opaque background so it visibly covers the heading while scrolling past it */}
       <div className={styles.overlapPanel}>
-        <DepartmentList departments={departmentsWithFormCounts} onSelect={handleSelect} />
-
+        <DepartmentList departments={departmentsWithFormCounts} />
       </div>
     </PageShell>
   )

@@ -2,7 +2,6 @@ import { Navigate, Route, Routes } from 'react-router-dom'
 import RequireAuth from './features/auth/RequireAuth'
 import SignInPage from './features/auth/SignInPage'
 import DepartmentsPage from './features/departments/DepartmentsPage'
-import DepartmentFormsPage from './features/departments/DepartmentFormsPage'
 import FormPage from './features/forms/FormPage'
 import DashboardPage from './features/dashboard/DashboardPage'
 import ProfilePage from './features/profile/ProfilePage'
@@ -33,14 +32,7 @@ export default function AppRoutes() {
           </RequireAuth>
         }
       />
-      <Route
-        path="/portal/:departmentId"
-        element={
-          <RequireAuth>
-            <DepartmentFormsPage />
-          </RequireAuth>
-        }
-      />
+      
       <Route
         path="/portal/:departmentId/forms/:formId"
         element={

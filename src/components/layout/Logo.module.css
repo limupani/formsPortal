@@ -2,10 +2,11 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  padding-right: 45px;
 }
 
 .mark {
-  height: 32px;
+  height: 64px;
   width: auto;
   display: block;
 }
